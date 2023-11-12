@@ -6,8 +6,10 @@
 <div class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-            <h1 class="text-4xl font-extrabold">
-                Selamat Datang di Joki Services
+            <h1 class="ml6">
+                <span class="text-wrapper">
+                    <span class="letters">Selamat Datang di Joki Sujilah</span>
+                </span>
             </h1>
             <p class="mt-4 text-lg">
                 Selamat datang di dunia jasa joki tugas terbaik! Kami dengan bangga memperkenalkan tim joki profesional kami yang siap membantu Anda dalam menyelesaikan berbagai tugas dengan cepat, efisien, dan berkualitas tinggi. Kami memiliki joki-joki berpengalaman yang telah membantu banyak klien dengan kesuksesan dalam berbagai bidang.
@@ -84,4 +86,48 @@
         </div>
     </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<style>
+    .ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+    }
+
+    .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+    }
+
+    .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+    }
+</style>
+
+<script>
+    var textWrapper = document.querySelector('.ml6 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+    .add({
+        targets: '.ml6 .letter',
+        translateY: ["1.1em", 0],
+        translateZ: 0,
+        duration: 1000,
+        delay: (el, i) => 50 * i
+    }).add({
+        targets: '.ml6',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1250
+    });
+</script>
 @endsection

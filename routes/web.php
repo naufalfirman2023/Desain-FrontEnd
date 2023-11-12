@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LandingPage;
 use App\Http\Controllers\Product;
+use App\Http\Controllers\PromoController;
 use App\Http\Controllers\Team;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LandingPage::class, 'index']);
 Route::get('/team', [Team::class, 'index']);
 Route::get('/produk', [Product::class, 'index']);
+Route::get('/promo', [PromoController::class, 'index']);

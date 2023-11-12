@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    
     <title>Tugas</title>
 </head>
 <body class="bg-gradient-to-r from-blue-500 via-blue-200 to-blue-200 flex flex-col min-h-screen">
