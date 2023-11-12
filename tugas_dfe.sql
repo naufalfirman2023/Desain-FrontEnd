@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Okt 2023 pada 15.57
+-- Waktu pembuatan: 12 Nov 2023 pada 07.21
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 8.0.25
 
@@ -63,7 +63,8 @@ CREATE TABLE `pengurus` (
 INSERT INTO `pengurus` (`id_pengurus`, `nama_pengurus`, `about`, `npm`, `img`, `link_ig`) VALUES
 (1, 'naufal firmansyah', '@nauffalalalala_', '5210411166', 'nopal.png', 'https://www.instagram.com/nauffalalalala_/?hl=id'),
 (2, 'zaedar ghazalba', '@godhokmiee', '5210411192', 'zaedar.png', 'https://www.instagram.com/godhokmiee/?hl=id'),
-(3, 'bella triana', '@bellatr__', '5210411175', 'bella.png', 'https://www.instagram.com/bellatr__/?hl=id');
+(3, 'bella triana', '@bellatr__', '5210411175', 'bella.png', 'https://www.instagram.com/bellatr__/?hl=id'),
+(4, 'mau JOIN???', 'Silahkan daftar', '082265057386', '', '');
 
 -- --------------------------------------------------------
 
@@ -125,7 +126,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT untuk tabel `pengurus`
 --
 ALTER TABLE `pengurus`
-  MODIFY `id_pengurus` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_pengurus` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `produk`
